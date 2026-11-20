@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://w3.org">
+<html xmlns="http://w3.org" xml:lang="en">
+
+<head>
+  <title>115570001邱彥婷</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+  <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+  </script>
+
+  <style type="text/css">
+    #title-text {
+      color: brown;
+      font-size: 30pt;
+      font-weight: bold;
+    }
+
+    #mouse-btn {
+      color: red;
+      font-weight: bold;
+      font-size: 30pt;
+      font-style: normal;
+    }
+
+    #status-text {
+      color: blue;
+      font-weight: bold;
+      font-size: 30pt;
+      margin-top: 20px;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+    function doMouseOver() {
+      var btn = document.getElementById("mouse-btn");
+      btn.style.color = "blue";
+      btn.style.backgroundColor = "yellow";
+      btn.style.fontWeight = "bold";
+      btn.style.fontStyle = "normal";
+      btn.style.fontSize = "30pt";
+      document.getElementById("status-text").innerText = "滑鼠滑過";
+    }
+
+    function doMouseOut() {
+      var btn = document.getElementById("mouse-btn");
+      btn.style.color = "red";
+      btn.style.backgroundColor = "yellow";
+      btn.style.fontWeight = "bold";
+      btn.style.fontStyle = "normal";
+      btn.style.fontSize = "30pt";
+      document.getElementById("status-text").innerText = "滑鼠離開";
+    }
+
+    function doMouseDown() {
+      var btn = document.getElementById("mouse-btn");
+      btn.style.color = "yellow";
+      btn.style.fontStyle = "italic";
+      btn.style.backgroundColor = "blue";
+      btn.style.fontWeight = "bold";
+      btn.style.fontSize = "30pt";
+      document.getElementById("status-text").innerText = "滑鼠按下";
+    }
+
+    function doMouseUp() {
+      var btn = document.getElementById("mouse-btn");
+      btn.style.color = "green";
+      btn.style.backgroundColor = "yellow";
+      btn.style.fontWeight = "bold";
+      btn.style.fontStyle = "normal";
+      btn.style.fontSize = "30pt";
+      document.getElementById("status-text").innerText = "滑鼠放開";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main">	
+    <div id="site_content">  
+	  <div id="menubar">
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="a1.html">第一題</a></li>
+          <li><a href="a2.html">第二題</a></li>
+          <li><a href="a3.html">第三題</a></li>
+          <li class="current"><a href="a4.html">第四題</a></li>
+        </ul>
+	  </div><!--close menubar-->
+      <div id="header">  
+        <h1>Blue <span>Ripples</span></h1>	
+	    <h2>Company Slogan Goes Here</h2>
+      </div><!--close header-->	
+	  <div id="banner_image">
+	    <div id="slider-wrapper">        
+          <div id="slider" class="nivoSlider">
+            <img src="images/slide1.jpg" alt="" />
+            <img src="images/slide2.jpg" alt="" />
+            <img src="images/slide3.jpg" alt="" />
+		  </div><!--close slider-->
+		</div><!--close slider-wrapper-->
+	  </div><!--close banner_image-->		  
+      <div id="content">
+        <div class="content_item">
+          <h1 id="title-text">滑鼠事件</h1>
+          <hr />
+          <button type="button" id="mouse-btn" 
+                  onmouseover="doMouseOver()" 
+                  onmouseout="doMouseOut()" 
+                  onmousedown="doMouseDown()" 
+                  onmouseup="doMouseUp()">各種滑鼠事件</button>
+          <p id="status-text"></p>
+		</div><!--close content_item-->	
+	      
+		<div class="sidebar_container">   		  
+		  <div class="sidebar">
+            <div class="sidebar_item">
+                <h2>Latest Blog</h2>
+			    <h4>April 2012</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		          <a href="#">Read more</a>
+              </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->     		
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+		  	  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+			  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+        </div><!--close sidebar_container-->	
+       <br style="clear:both;" />
+      </div><!--close content-->	
+    </div><!--close site_content-->	
+    <div id="footer">  
+      <a href="http://w3.org">©版權所有 2023 by 115570001邱彥婷</a>
+    </div><!--close footer-->	
+  </div><!--close main-->	
+</body>
+</html>
